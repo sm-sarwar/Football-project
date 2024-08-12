@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+/* header section start */
+header{
+    width: 100%;
+    background-color: rgba(16, 16, 175, 0.884);
+    padding: 50px 100px 80px 100px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+    gap: 36px;
+   
+}
+.nav-item a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.login-btn{
+    background-color: rgb(224, 44, 109);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    padding: 2px 10px;
+}
+.login-img{
+    width: 30px;
+}
+.ham-icon-box{
+    display: none;
+}
+.ham-barguer{
+    color: white;
+}
+/* banner section  */
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-content-title{
+    font-size:3.8rem;
+    color: white;
+    width: 486px;
+    margin-top: 100px;
+}
+.watch-btn{
+    background-color: rgb(224, 44, 109);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+.banner-image-box{
+    width: 556px;
+    margin-top: 50px;
+}
+.banner-image-box img{
+    width: 100%;
+}
+/* Responsive  */
+@media screen and (max-width:576px){
+    .nav-item{
+        display: none;
+    }
+    .ham-icon-box{
+        display: block;
+    }
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-content-title,
+    .banner-image-box{
+        width: 90%;
+    }
+}
