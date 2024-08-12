@@ -130,6 +130,31 @@ header{
 .highlights-image-box img{
     width: 100%;
 }
+/* Logo section  */
+.logo-box{
+    width: 485px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.logo-box img{
+    width: 100%;
+}
+.icon-box{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+.icon-box img{
+    width: 40px;
+}
+.copy{
+    color: rgb(0, 0, 0);
+    font-size: 1.12rem;
+    font-weight: 400;
+    margin: 20px auto;
+    text-align: center;
+       
+}
 /* Responsive  */
 @media screen and (max-width:576px){
     .nav-item{
@@ -150,12 +175,15 @@ header{
         align-items: start;
     }
     .banner-content-title,
+    .logo-box,
+    
     .banner-image-box{
         width: 90%;
     }
     .highlights-title,
     .highlights-des,
     .highlights-image-box
+    
     {
         width: 100%;
     }
